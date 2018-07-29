@@ -20,6 +20,7 @@ public class FileReaderTest {
             FileReader fr = new FileReader(f);
             InputStreamReader inR = new InputStreamReader(new FileInputStream(f),Charset.forName("Unicode"));
             inR.read(all);
+
             System.out.println(new String(all));
         }catch (IOException e){
             e.printStackTrace();
